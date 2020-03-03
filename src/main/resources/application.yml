@@ -1,0 +1,10 @@
+server:
+ port: 6060
+spring:
+  cloud:
+   gateway:
+      routes:
+        - id: first_route
+          uri: https://github.com/sunweisheng
+          predicates:
+            - Path=/test
